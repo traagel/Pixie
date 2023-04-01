@@ -31,7 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function navigateToSection(targetId) {
-  document.querySelectorAll('section').forEach(function (section) {
+  const sections = document.querySelectorAll('section.main-category');
+  sections.forEach(function (section) {
     if (section.id === targetId) {
       section.style.display = 'block';
     } else {
