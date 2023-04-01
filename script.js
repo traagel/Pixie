@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 const navItems = document.querySelectorAll("nav ul li a");
-const contentSections = document.querySelectorAll(".main-category-content");
+const contentSections = document.querySelectorAll(".phone-screen > section");
 
 navItems.forEach((navItem) => {
   navItem.addEventListener("click", (event) => {
