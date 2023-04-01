@@ -27,15 +27,25 @@ document.addEventListener('DOMContentLoaded', function () {
       maintainAspectRatio: false,
       responsive: true
     }
+  });
 
 
-function changePage(target) {
-  const mainCategoryContents = document.querySelectorAll('.main-category-content');
+const navItems = document.querySelectorAll("nav ul li a");
+const contentSections = document.querySelectorAll(".main-category-content");
+
+navItems.forEach((navItem) => {
+  navItem.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const targetId = event.target.getAttribute("href");
+    contentSections.forEach((section) => {
+      if (section.id === `content-${targetId}`) {
+        section.style.display = "block";
+      } else {
+        section.style.display = "none";
+      }
+    });
+  });
+});
   
-  mainCategoryContents.forEach((content) => {
-    content.style.display = 'none';
-  });
-
-  document.getElementById(`content-${target}`).style.display = 'block';
-}
-  });
+});
