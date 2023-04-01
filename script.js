@@ -29,23 +29,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-
-function navigateToSection(targetId) {
-  const sections = document.querySelectorAll('section.main-category');
-  sections.forEach(function (section) {
-    if (section.id === targetId) {
-      section.style.display = 'block';
-    } else {
-      section.style.display = 'none';
-    }
+function changePage(target) {
+  const mainCategoryContents = document.querySelectorAll('.main-category-content');
+  
+  mainCategoryContents.forEach((content) => {
+    content.style.display = 'none';
   });
+
+  document.getElementById(`content-${target}`).style.display = 'block';
 }
-
-document.querySelectorAll('nav a').forEach(function (link) {
-  link.addEventListener('click', function (event) {
-    event.preventDefault();
-    const targetId = this.getAttribute('data-target');
-    navigateToSection(targetId);
-  });
-});
-});
