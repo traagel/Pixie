@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
       maintainAspectRatio: false,
       responsive: true
     }
-  });
+
 
 function changePage(target) {
   const mainCategoryContents = document.querySelectorAll('.main-category-content');
@@ -38,3 +38,4 @@ function changePage(target) {
 
   document.getElementById(`content-${target}`).style.display = 'block';
 }
+  });
