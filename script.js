@@ -28,31 +28,27 @@ document.addEventListener('DOMContentLoaded', function () {
       responsive: true
     }
   });
-
-
-const navItems = document.querySelectorAll("nav ul li a");
-const contentSections = document.querySelectorAll(".phone-screen > section");
-
-navItems.forEach((navItem) => {
-  navItem.addEventListener("click", (event) => {
-    event.preventDefault();
-
-    const targetId = event.target.dataset.target;
-    contentSections.forEach((section) => {
-      if (section.id === `content-${targetId}`) {
-        section.style.display = "block";
-      } else {
-        section.style.display = "none";
-      }
-    });
-  });
 });
 
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-} 
+
+
+function showSection(targetId) {
+  const contentSections = document.querySelectorAll("section");
+
+  contentSections.forEach((section) => {
+    if (section.id === `content-${targetId}`) {
+      section.style.display = "block";
+    } else {
+      section.style.display = "none";
+    }
+  });
+}
+
+const navButtons = document.querySelectorAll("nav ul li button");
+
+navButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const targetId = event.target.dataset.target;
+    showSection(targetId);
+  });
+});
