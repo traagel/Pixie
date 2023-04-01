@@ -30,20 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-const navItems = document.querySelectorAll("nav ul li a");
-const contentSections = document.querySelectorAll(".main-category-content");
-
-navItems.forEach((navItem) => {
-  navItem.addEventListener("click", (event) => {
+document.querySelectorAll('nav a').forEach(function (link) {
+  link.addEventListener('click', function (event) {
     event.preventDefault();
-
-    const targetId = event.target.getAttribute("href");
-    contentSections.forEach((section) => {
-      if (section.id === `content-${targetId}`) {
-        section.style.display = "block";
-      } else {
-        section.style.display = "none";
-      }
-    });
+    const targetId = this.getAttribute('data-target');
+    navigateToSection(targetId);
   });
 });
