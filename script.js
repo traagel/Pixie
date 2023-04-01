@@ -37,7 +37,7 @@ navItems.forEach((navItem) => {
   navItem.addEventListener("click", (event) => {
     event.preventDefault();
 
-    const targetId = event.target.getAttribute("data-target");
+    const targetId = event.target.dataset.target;
     contentSections.forEach((section) => {
       if (section.id === `content-${targetId}`) {
         section.style.display = "block";
@@ -46,6 +46,4 @@ navItems.forEach((navItem) => {
       }
     });
   });
-});
-  
 });
