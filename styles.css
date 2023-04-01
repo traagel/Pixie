@@ -326,10 +326,3 @@ section#dashboard {
   display: block;
 }
 
-section.main-category {
-  display: none !important;
-}
-
-section#dashboard.main-category {
-  display: block !important;
-}
