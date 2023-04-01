@@ -318,3 +318,10 @@ nav .settings-icon {
   font-weight: bold;
 }
 
+section {
+  display: none;
+}
+
+section#dashboard {
+  display: block;
+}
