@@ -37,7 +37,7 @@ navItems.forEach((navItem) => {
   navItem.addEventListener("click", (event) => {
     event.preventDefault();
 
-    const targetId = event.target.getAttribute("href");
+    const targetId = event.target.getAttribute("data-target");
     contentSections.forEach((section) => {
       if (section.id === `content-${targetId}`) {
         section.style.display = "block";
