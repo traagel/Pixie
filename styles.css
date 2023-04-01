@@ -318,10 +318,18 @@ nav .settings-icon {
   font-weight: bold;
 }
 
-.phone-screen > section {
+section {
   display: none;
 }
 
-.phone-screen > section#content-dashboard {
+section#dashboard {
   display: block;
+}
+
+section#tips {
+  display: none;
+}
+
+section#settings {
+  display: none;
 }
