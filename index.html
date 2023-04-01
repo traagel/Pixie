@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Pixie App Prototype</title>
+</head>
+<body>
+  <header>
+    <h1>Pixie App</h1>
+  </header>
+
+  <main>
+<div class="phone-mockup">
+  <div class="phone-screen scrollable">
+    <nav>
+      <ul>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#plants">Plants</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#settings">Settings</a></li>
+      </ul>
+    </nav>
+<section class="dashboard">
+  <div class="plant-health">
+    <h3>Plant Health</h3>
+    <div class="plant-status">
+      <span class="status healthy">Aloe Vera</span>
+      <span class="status attention">Snake Plant</span>
+      <span class="status critical">Fiddle Leaf Fig</span>
+    </div>
+<div class="soil-moisture">
+  <h2>Soil Moisture</h2>
+  <div class="chart-container">
+  <canvas id="soil-moisture-chart"></canvas>
+    </div>
+</div>
+
+  
+  <div class="environment">
+    <h3>Environment</h3>
+    <div class="environment-data">
+      <div class="data temperature">22°C / 71.6F</div>
+      <div class="data humidity">RH: 45%</div>
+      <div class="data air-quality">Air quality: Good</div>
+    </div>
+  </div>
+</section>
+
+    <section id="plants">
+      <h2>Plants</h2>
+      <p>List of your plants with their specific needs and care instructions.</p>
+      <!-- Add more plant details content here -->
+    </section>
+    <section id="schedule">
+      <h2>Watering Schedule</h2>
+      <p>Customize your watering schedule based on your plants' needs.</p>
+      <!-- Add more schedule content here -->
+    </section>
+    <section id="tips">
+      <h2>Tips & Advice</h2>
+      <p>Learn how to care for your plants and improve their health.</p>
+      <!-- Add more tips content here -->
+    </section>
+    <section id="settings">
+      <h2>Device Management</h2>
+      <p>Configure and manage your Pixie devices and settings.</p>
+      <!-- Add more settings content here -->
+    </section>
+  </div>
+</div>
+
+
+  </main>
+
+
+</body>
+</html>
