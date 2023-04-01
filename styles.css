@@ -127,10 +127,12 @@ footer {
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
   background: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .scrollable::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and Opera */
+  
 }
 
 nav {
@@ -160,10 +162,28 @@ nav a {
   transition: all 0.3s;
 }
 
+button {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+  border-color: #00AA66;
+  border-style: none;
+  background: transparent;
+}
+
 nav a:hover {
   background-color: #4CAF50;
   color: white;
 }
+
+button:hover {
+  background-color: #4CAF50;
+  color: #333;
+}
+
 
 .dashboard {
   display: flex;
@@ -214,11 +234,9 @@ nav a:hover {
 }
 
 .main-category {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 8px;
   padding: 0.5rem;
   margin-bottom: 1.5rem;
-  background: #ffffff;
   padding-bottom: 2rem;
 }
 
@@ -332,4 +350,113 @@ section#tips {
 
 section#settings {
   display: none;
+}
+
+.plant-health {
+  padding-top: 5px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  text-align: center;
+}
+
+.plant-health h2 {
+  font-size: 60px;
+}
+
+.soil-moisture {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.environment {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  text-align: center;
+}
+
+
+
+/* This is a single-line comment */
+.tablet .phone-wrapper-2 {
+  z-index: 3;
+  position: relative;
+  padding: 2px;
+  background: #333;
+  border-radius:35px;
+  margin-left: 50px;
+  height: 945px;
+}
+
+.tablet .phone-wrapper {
+  z-index: 3;
+  position: relative;
+  width: 1365px;
+  height: 941px;
+  margin: 0 auto;
+  padding: 2px;
+ background: rgb(83,58,108);
+background: linear-gradient(42deg, rgba(83,58,108,1) 0%, rgba(131,137,208,1) 12%, rgba(99,62,135,1) 100%); 
+  border-radius: 32px;
+-webkit-box-shadow: 0px 15px 47px 20px rgba(0,0,0,0.45);
+-moz-box-shadow: 0px 15px 47px 20px rgba(0,0,0,0.45);
+box-shadow: 0px 15px 47px 20px rgba(0,0,0,0.45);
+}
+
+.tablet .phone-mockup {
+  z-index:1;
+  border-radius: 30px;
+  background-color: #222;
+  width: 1346px;
+  height: 920px;
+  padding: 10px 10px;
+  position: relative;
+}
+
+.phone-mockup::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 18px;
+  background-color: #212121;
+  border-radius: 0 0 15px 15px;
+}
+
+.phone-screen {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.tablet .scrollable {
+  overflow-y: scroll;
+  height: 920px;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  background: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+  
+}
+
+.tablet nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  background: #228B22;
+  margin-top: -20px;
+  width: 100%;
+  height: 40px;
+  margin-left: -20px;
+  padding-left: 1000px;
+  width: 356px;
+  color: white;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
