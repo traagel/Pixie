@@ -318,10 +318,10 @@ nav .settings-icon {
   font-weight: bold;
 }
 
-section {
+.phone-screen > section {
   display: none;
 }
 
-section#content-dashboard {
+.phone-screen > section#content-dashboard {
   display: block;
 }
