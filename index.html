@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
   <title>Pixie App Prototype</title>
 </head>
 
@@ -15,7 +16,6 @@
   </header>
 
   <main>
-    <button onclick="myFunction()">Click Me</button>
     <div class="phone-wrapper-2">
       <div class="phone-wrapper">
         <div class="phone-mockup">
@@ -24,41 +24,40 @@
           <div class="button-left button-bottom"></div>
           <div class="button-right"></div>
           <div class="phone-screen scrollable">
+
             <nav>
               <ul>
-                <li><a data-target="dashboard">Dashboard</a></li>
-                <li><a data-target="plants">Plants</a></li>
-                <li><a data-target="schedule">Schedule</a></li>
+                <li><button data-target="dashboard">Dashboard</button></li>
+                <li><button data-target="plants">Plants</button></li>
+                <li><button data-target="schedule">Schedule</button></li>
               </ul>
               <span class="settings-icon">&#9776;</span>
             </nav>
 
-
             <div id="content-dashboard" class="main-category-content" style="display: block;">
-              <section class="dashboard">
+              <section id="content-dashboard" class="dashboard">
 
-                <div class="main-category dashboard-container">
+                <div class="main-category dashboard-containere">
                   <h2>Dashboard</h2>
                   <div class="plant-health">
                     <h3>Plant Health</h3>
-<div class="plant-status">
-  <div class="plant">
-    <img class="plant-1" width="100" height="100" src="https://cdn.shopify.com/s/files/1/0248/6983/products/HousewarmingGiftBoxMarbleQueenPathosWhiteStake_single_1.jpg">
-    <span class="status healthy">Aloe Vera</span>
-    <span class="alert none">Everything is great!</span>
-  </div>
-  <div class="plant">
-    <img class="plant-1" width="100" height="100" src="https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_400,q_auto:good,w_400/v1653997621/c0ks5bx9bqhkrd2uypje.jpg">
-    <span class="status attention">Snake Plant</span>
-    <span class="alert fertilizing">Needs fertilizing</span>
-  </div>
-  <div class="plant">
-    <img class="plant-1" width="100" height="100" src="https://www.prettypetals.in/images/PLC1273_big.webp">
-    <span class="status critical">Fiddle Leaf Fig</span>
-    <span class="alert watering">Needs watering</span>
-  </div>
-</div>
-
+                    <div class="plant-status">
+                      <div class="plant">
+                        <img class="plant-1" width="100" height="100" src="https://cdn.shopify.com/s/files/1/0248/6983/products/HousewarmingGiftBoxMarbleQueenPathosWhiteStake_single_1.jpg">
+                        <span class="status healthy">Aloe Vera</span>
+                        <span class="alert none">Everything is great!</span>
+                      </div>
+                      <div class="plant">
+                        <img class="plant-1" width="100" height="100" src="https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_400,q_auto:good,w_400/v1653997621/c0ks5bx9bqhkrd2uypje.jpg">
+                        <span class="status attention">Snake Plant</span>
+                        <span class="alert fertilizing">Needs fertilizing</span>
+                      </div>
+                      <div class="plant">
+                        <img class="plant-1" width="100" height="100" src="https://www.prettypetals.in/images/PLC1273_big.webp">
+                        <span class="status critical">Fiddle Leaf Fig</span>
+                        <span class="alert watering">Needs watering</span>
+                      </div>
+                    </div>
 
                   </div>
                   <div class="soil-moisture">
@@ -81,7 +80,7 @@
             </div>
 
             <div id="content-plants" class="main-category-content">
-              <section id="plants" class="main-category">
+              <section id="content-plants" class="main-category">
                 <h2>Plants</h2>
                 <p>List of your plants with their specific needs and care instructions.</p>
                 <ul>
@@ -93,7 +92,7 @@
             </div>
 
             <div id="content-schedule" class="main-category-content">
-              <section id="schedule" class="main-category">
+              <section id="content-schedule" class="main-category">
                 <h2>Watering Schedule</h2>
                 <p>Customize your watering schedule based on your plants' needs.</p>
                 <ul>
@@ -103,7 +102,7 @@
               </section>
             </div>
 
-            <section id="tips" class="main-category">
+            <section id="content-tips" class="main-category">
               <h2>Tips & Advice</h2>
               <p>Learn how to care for your plants and improve their health.</p>
               <ul>
@@ -112,13 +111,13 @@
                 <li>How to propagate plants for more greenery</li>
               </ul>
             </section>
-            <section id="settings" class="main-category">
+            <section id="content-settings" class="main-category">
               <h2>Device Management</h2>
               <p>Configure and manage your Pixie devices and settings.</p>
               <ul>
                 <li>Update Pixie firmware</li>
                 <li>Adjust Pixie notification preferences</li>
-                <li>Set up multiple Pixie devices for different plants</li>
+                <li>Set up multiple Pixie devices for different plants 2</li>
               </ul>
             </section>
 
