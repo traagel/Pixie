@@ -30,6 +30,16 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+function navigateToSection(targetId) {
+  document.querySelectorAll('section').forEach(function (section) {
+    if (section.id === targetId) {
+      section.style.display = 'block';
+    } else {
+      section.style.display = 'none';
+    }
+  });
+}
+
 document.querySelectorAll('nav a').forEach(function (link) {
   link.addEventListener('click', function (event) {
     event.preventDefault();
