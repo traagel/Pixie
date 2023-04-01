@@ -25,18 +25,18 @@ main {
 .button-right {
   z-index: 3;
   position: absolute;
-  width: 4px;
+  width: 2px;
   height: 60px;
-  background-color: #555;
+  background-color: #855f99;
   border-radius: 4px;
 }
 
 .button-left {
-  left: -8px;
+  left: -5px;
 }
 
 .button-right {
-  right: -8px;
+  right: -4px;
   height: 80px;
   top: 25%;
 }
@@ -57,11 +57,12 @@ main {
 .phone-wrapper {
   z-index: 3;
   position: relative;
-  width: 370px;
+  width: 365px;
   height: 741px;
   margin: 0 auto;
-  padding: 5px;
-  background-color: #734f96;
+  padding: 4px;
+ background: rgb(83,58,108);
+background: linear-gradient(42deg, rgba(83,58,108,1) 0%, rgba(131,137,208,1) 12%, rgba(99,62,135,1) 100%); 
   border-radius: 32px;
 }
 
@@ -69,26 +70,22 @@ main {
   z-index:1;
   border-radius: 30px;
   background-color: #333;
-  width: 350px;
+  width: 346px;
   height: 720px;
   padding: 10px 10px;
   position: relative;
 }
 
-
-
-
-
 .phone-mockup::before {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
-  height: 16px;
+  width: 120px;
+  height: 18px;
   background-color: #212121;
-  border-radius: 15px;
+  border-radius: 0 0 15px 15px;
 }
 
 .phone-screen {
