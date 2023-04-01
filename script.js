@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
       responsive: true
     }
   });
-});
+
 
 function navigateToSection(targetId) {
   const sections = document.querySelectorAll('section.main-category');
@@ -47,4 +47,5 @@ document.querySelectorAll('nav a').forEach(function (link) {
     const targetId = this.getAttribute('data-target');
     navigateToSection(targetId);
   });
+});
 });
