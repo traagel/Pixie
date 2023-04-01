@@ -322,7 +322,6 @@ section {
   display: none;
 }
 
-section#dashboard {
+section#content-dashboard {
   display: block;
 }
-
