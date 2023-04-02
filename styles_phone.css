@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -154,13 +156,12 @@ button:hover {
 
 
 .dashboard {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  display: inline-block;
   width: 100%;
+  justify-content: center;
+  align-content: center;
 }
+
 
 .status {
   display: inline-block;
@@ -193,7 +194,6 @@ button:hover {
 
 .chart-container {
   width: 100%;
-  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -203,12 +203,6 @@ button:hover {
   padding: 0.5rem 0.5rem 2rem;
 }
 
-.dashboard-container {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 2rem;
-  width:100%;
-}
 
 nav {
   display: flex;
@@ -235,10 +229,6 @@ nav li {
 nav a {
   text-decoration: none;
   color: #fff;
-}
-
-.main-category h2 {
-  text-align: center;
 }
 
 .plant-status {
@@ -291,9 +281,6 @@ section {
   display: none;
 }
 
-section#dashboard {
-  display: block;
-}
 
 section#tips {
   display: none;
@@ -305,28 +292,56 @@ section#settings {
 
 
 .plant-info {
-  display:inline-flex;
-  width: 100%;
   height: 6.5rem;
   font-size: 0.8rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  display:grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0;
 }
 
 .plant-info div{
-  border: 1px solid #000;
-  margin: auto;
-  padding:0;
-  text-align: center;
+  margin-top: -0.5rem;
+  text-align: left;
+  vertical-align: middle;
+  height: 6.5rem;
+}
+
+.plant-info-left {
+  width: 110px;
+  margin-left: 1rem;
+}
+
+.plant-info-left p {
+  margin-top: -0.2rem;
+  font-style: italic;
+}
+
+.plant-info-middle {
+  width: 5rem;
+}
+
+.plant-info-right {
+  width: 6rem;
 }
 
 .content {
-  box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 5px;
   width: 90%;
-  align-content: center;
-  justify-content: center;
+  margin-left:1rem;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
+}
+
+.dashboard h2 {
+  margin-left: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 0;
+  font-size: 1rem;
+  color:#333;
 }
 
 .plant-1 {
@@ -334,11 +349,40 @@ section#settings {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-.plant-info-left {
+.plaint-info-middle{
+  margin-bottom:50rem;
+}
 
+.plant-info-middle p{
+  margin-top: 2.5rem;
+}
+
+.plant-info-right p{
+  padding-top: 2rem;
+  margin:0;
+}
+
+.plant-info-right .row2 {
+  padding-top: 0;
+  margin:0;
 }
 
 .settings {
   font-size: 2rem;
   margin-top: -1.3rem;
+}
+
+.plant-a {
+  background: rgb(255,255,255);
+  background: linear-gradient(-90deg, rgba(255,255,255,1) 96%, rgba(24,135,177,1) 96%);
+}
+
+.plant-b {
+  background: rgb(255,255,255);
+  background: linear-gradient(-90deg, rgba(255,255,255,1) 96%, rgba(24,177,60,1) 96%);
+}
+
+.status-type {
+  margin: 0;
+  padding: 0;
 }
