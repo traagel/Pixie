@@ -1,1 +1,253 @@
 
+.status.healthy {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.status.attention {
+  background-color: #FFC107;
+  color: #333;
+}
+
+.status.critical {
+  background-color: #F44336;
+  color: white;
+}
+
+.soil-moisture {
+  margin-bottom: 1rem;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main-category {
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #228B22;
+  margin-top: -25px;
+  width: 100%;
+  height: 50px;
+  margin-left: -25px;
+  width: 356px;
+  color: white;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+nav li {
+  margin-right: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav .settings-icon {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  margin-top: 5px;
+}
+
+
+.main-category h2 {
+  text-align: center;
+}
+
+.plant-status {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 50%;
+}
+
+.alert {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.plant-status {
+  display: flex;
+  flex-direction: column;
+}
+
+.plant {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.status {
+  margin-right: 0.5rem;
+  font-weight: normal;
+  font-size: 1em;
+  color: #333;
+}
+
+.alert {
+  font-weight: normal;
+  font-size: 0.8em;
+  color: #777;
+}
+
+.alert.watering {
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.alert.fertilizing {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+section {
+  display: none;
+}
+
+section#dashboard {
+  display: block;
+}
+
+section#tips {
+  display: none;
+}
+
+section#settings {
+  display: none;
+}
+
+.plant-health {
+  padding-top: 5px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  text-align: center;
+}
+
+.plant-health h2 {
+  font-size: 60px;
+}
+
+.soil-moisture {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.environment {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  text-align: center;
+}
+
+
+
+/* This is a single-line comment */
+.tablet .phone-wrapper-2 {
+  z-index: 3;
+  position: relative;
+  padding: 2px;
+  background: #333;
+  border-radius:35px;
+  margin-left: 50px;
+  height: 945px;
+}
+
+.tablet .phone-wrapper {
+  z-index: 3;
+  position: relative;
+  width: 1365px;
+  height: 941px;
+  margin: 0 auto;
+  padding: 2px;
+ background: rgb(83,58,108);
+background: linear-gradient(42deg, rgba(83,58,108,1) 0%, rgba(131,137,208,1) 12%, rgba(99,62,135,1) 100%); 
+  border-radius: 32px;
+-webkit-box-shadow: 0px 15px 47px 20px rgba(0,0,0,0.45);
+-moz-box-shadow: 0px 15px 47px 20px rgba(0,0,0,0.45);
+box-shadow: 0px 15px 47px 20px rgba(0,0,0,0.45);
+}
+
+.tablet .phone-mockup {
+  z-index:1;
+  border-radius: 30px;
+  background-color: #222;
+  width: 1346px;
+  height: 920px;
+  padding: 10px 10px;
+  position: relative;
+}
+
+.phone-mockup::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 18px;
+  background-color: #212121;
+  border-radius: 0 0 15px 15px;
+}
+
+.phone-screen {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.tablet .scrollable {
+  overflow-y: scroll;
+  height: 920px;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  background: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+  
+}
+
+.tablet nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  background: #228B22;
+  margin-top: -20px;
+  width: 100%;
+  height: 40px;
+  margin-left: -20px;
+  padding-left: 1000px;
+  width: 356px;
+  color: white;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
