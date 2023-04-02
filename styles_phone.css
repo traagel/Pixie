@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
+  color: #333;
 }
 
 header {
@@ -56,9 +57,7 @@ main {
 .phone-wrapper-2 {
   z-index: 3;
   position: relative;
-  width: 5;
   height: 745px;
-  margin: 50 auto;
   padding: 2px;
   background: #333;
   border-radius:33px;
@@ -71,12 +70,12 @@ main {
   height: 741px;
   margin: 0 auto;
   padding: 2px;
-  background: rgb(83,58,108);
-  background: linear-gradient(42deg, rgba(83,58,108,1) 0%, rgba(131,137,208,1) 12%, rgba(99,62,135,1) 100%);
+ background: rgb(83,58,108);
+background: linear-gradient(42deg, rgba(83,58,108,1) 0%, rgba(131,137,208,1) 12%, rgba(99,62,135,1) 100%); 
   border-radius: 32px;
-  -webkit-box-shadow: 0px 15px 47px 20px rgba(0,0,0,0.45);
-  -moz-box-shadow: 0px 15px 47px 20px rgba(0,0,0,0.45);
-  box-shadow: 0px 15px 47px 20px rgba(0,0,0,0.45);
+-webkit-box-shadow: 0 15px 47px 20px rgba(0,0,0,0.45);
+-moz-box-shadow: 0 15px 47px 20px rgba(0,0,0,0.45);
+box-shadow: 0 15px 47px 20px rgba(0,0,0,0.45);
 }
 
 .phone-mockup {
@@ -107,7 +106,6 @@ main {
   height: 100%;
   border-radius: 30px;
   overflow: hidden;
-  padding: 1rem;
   box-sizing: border-box;
 }
 
@@ -127,40 +125,14 @@ footer {
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
   background: #fff;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0 18px 36px -18px inset;
 }
 
 .scrollable::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and Opera */
-
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: #f5f5f5;
-  padding: 0.5rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  transition: all 0.3s;
-}
 
 button {
   text-decoration: none;
@@ -174,10 +146,6 @@ button {
   background: transparent;
 }
 
-nav a:hover {
-  background-color: #4CAF50;
-  color: white;
-}
 
 button:hover {
   background-color: #4CAF50;
@@ -191,11 +159,7 @@ button:hover {
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
-}
-
-.dashboard h2 {
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .status {
@@ -205,7 +169,7 @@ button:hover {
   font-weight: 500;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
 }
 
 .status.healthy {
@@ -235,14 +199,15 @@ button:hover {
 
 .main-category {
   border-radius: 8px;
-  padding: 0.5rem;
   margin-bottom: 1.5rem;
-  padding-bottom: 2rem;
+  padding: 0.5rem 0.5rem 2rem;
 }
 
 .dashboard-container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 2rem;
+  width:100%;
 }
 
 nav {
@@ -250,22 +215,17 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: #228B22;
-  margin-top: -25px;
-  width: 100%;
   height: 50px;
-  margin-left: -25px;
   width: 356px;
   color: white;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
 }
 
 nav ul {
-  display: flex;
+  display: inline-flex;
   list-style-type: none;
-  margin: 0;
-  padding-left: 25px;
-  padding-top: 15px;
+  margin: auto;
+  padding-top: 1.2rem;
+  margin-left: 2.5rem;
 }
 
 nav li {
@@ -277,22 +237,13 @@ nav a {
   color: #fff;
 }
 
-nav .settings-icon {
-  font-size: 2rem;
-  margin-right: 1.5rem;
-  margin-top: 5px;
-}
-
-
 .main-category h2 {
   text-align: center;
 }
 
 .plant-status {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  width: 50%;
+
 }
 
 .alert {
@@ -352,111 +303,42 @@ section#settings {
   display: none;
 }
 
-.plant-health {
-  padding-top: 5px;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
+.plant-info {
+  display:inline-flex;
+  width: 100%;
+  height: 6.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.plant-info div{
+  border: 1px solid #000;
+  margin: auto;
+  padding:0;
   text-align: center;
 }
 
-.plant-health h2 {
-  font-size: 60px;
+.content {
+  box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 5px;
+  width: 90%;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
-.soil-moisture {
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+.plant-1 {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-.environment {
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-  text-align: center;
-}
-
-
-
-/* This is a single-line comment */
-.tablet .phone-wrapper-2 {
-  z-index: 3;
-  position: relative;
-  padding: 2px;
-  background: #333;
-  border-radius:35px;
-  margin-left: 50px;
-  height: 945px;
-}
-
-.tablet .phone-wrapper {
-  z-index: 3;
-  position: relative;
-  width: 1365px;
-  height: 941px;
-  margin: 0 auto;
-  padding: 2px;
-  background: rgb(83,58,108);
-  background: linear-gradient(42deg, rgba(83,58,108,1) 0%, rgba(131,137,208,1) 12%, rgba(99,62,135,1) 100%);
-  border-radius: 32px;
-  -webkit-box-shadow: 0px 15px 47px 20px rgba(0,0,0,0.45);
-  -moz-box-shadow: 0px 15px 47px 20px rgba(0,0,0,0.45);
-  box-shadow: 0px 15px 47px 20px rgba(0,0,0,0.45);
-}
-
-.tablet .phone-mockup {
-  z-index:1;
-  border-radius: 30px;
-  background-color: #222;
-  width: 1346px;
-  height: 920px;
-  padding: 10px 10px;
-  position: relative;
-}
-
-.phone-mockup::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 18px;
-  background-color: #212121;
-  border-radius: 0 0 15px 15px;
-}
-
-.phone-screen {
-  background-color: white;
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
-  overflow: hidden;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-.tablet .scrollable {
-  overflow-y: scroll;
-  height: 920px;
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
-  background: #fff;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
-
-.scrollable::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+.plant-info-left {
 
 }
 
-.tablet nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: right;
-  background: #228B22;
-  margin-top: -20px;
-  width: 100%;
-  height: 40px;
-  margin-left: -20px;
-  padding-left: 1000px;
-  width: 356px;
-  color: white;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
+.settings {
+  font-size: 2rem;
+  margin-top: -1.3rem;
 }
