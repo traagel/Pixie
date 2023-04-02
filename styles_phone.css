@@ -151,7 +151,7 @@ button {
 
 button:hover {
   background-color: #4CAF50;
-  color: #333;
+  color: #ddd;
 }
 
 
@@ -198,6 +198,7 @@ button:hover {
 }
 
 .main-category {
+  width: 100%;
   border-radius: 8px;
   margin-bottom: 1.5rem;
   padding: 0.5rem 0.5rem 2rem;
@@ -208,7 +209,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #228B22;
+  background: #275d4b;
   height: 50px;
   width: 356px;
   color: white;
@@ -217,18 +218,17 @@ nav {
 nav ul {
   display: inline-flex;
   list-style-type: none;
-  margin: auto;
-  padding-top: 1.2rem;
-  margin-left: 2.5rem;
+  margin-left: -3rem;
+  padding-top: 1.5rem;
+
 }
 
 nav li {
-  margin-right: 0.5rem;
+  margin-right: 0.025rem;
 }
 
-nav a {
-  text-decoration: none;
-  color: #fff;
+nav .logo {
+  margin-top: -1rem;
 }
 
 .plant-status {
@@ -288,6 +288,7 @@ section#tips {
 
 section#settings {
   display: none;
+
 }
 
 
@@ -336,7 +337,7 @@ section#settings {
   padding-top: 1.5rem;
 }
 
-.dashboard h2 {
+h2 {
   margin-left: 1rem;
   font-family: 'Open Sans', sans-serif;
   padding-bottom: 0;
