@@ -387,3 +387,29 @@ h2 {
   margin: 0;
   padding: 0;
 }
+
+.environment-data{
+  height: 6rem;
+  margin-bottom: 2rem;
+}
+
+.data-column {
+  float: left;
+  width: 33.33%;
+  height: 3rem;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.data-column p{
+  margin-top: -0.3rem;
+  font-size: 14px;
+}
+
+.environment-data:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
